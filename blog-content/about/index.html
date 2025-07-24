@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AI Monetization Demo Blog</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta name="description" content="About the AI Monetization Demo showcasing AWS CloudFront, WAF, and bot detection">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">AI Demo Blog</a>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../page1/index.html">AI & ML</a></li>
+                        <li><a href="../page2/index.html">Web Scraping</a></li>
+                        <li><a href="../page3/index.html">Monetization</a></li>
+                        <li><a href="index.html" class="active">About</a></li>
+                        <li><a href="../contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <article class="article">
+                <h1>About This Demo</h1>
+                
+                <p>This AI Monetization Demo showcases a complete technical solution for detecting AI crawlers and redirecting them to monetization endpoints while maintaining a seamless experience for human users.</p>
+
+                <h2>Technical Architecture</h2>
+                <p>The demo is built using modern AWS services and follows cloud-native best practices:</p>
+
+                <h2>AWS CloudFront</h2>
+                <p>Our content delivery network provides:</p>
+                <ul>
+                    <li>Global edge locations for low-latency content delivery</li>
+                    <li>Edge computing capabilities through CloudFront Functions</li>
+                    <li>Integration with AWS WAF for security and bot detection</li>
+                    <li>Origin Access Control for secure S3 bucket access</li>
+                </ul>
+
+                <h2>AWS WAF with Bot Control v3.2</h2>
+                <p>The Web Application Firewall provides sophisticated bot detection:</p>
+                <ul>
+                    <li>Machine learning-based bot classification</li>
+                    <li>Real-time analysis of request patterns and behavior</li>
+                    <li>Custom header injection for detected AI crawlers</li>
+                    <li>Minimal false positive rates for legitimate traffic</li>
+                </ul>
+
+                <h2>CloudFront Functions</h2>
+                <p>Lightweight edge computing enables:</p>
+                <ul>
+                    <li>Sub-millisecond request processing</li>
+                    <li>Header-based routing and redirection logic</li>
+                    <li>Preservation of original request context</li>
+                    <li>Cost-effective scaling to millions of requests</li>
+                </ul>
+
+                <h2>Amazon S3 Static Website Hosting</h2>
+                <p>Reliable and scalable content storage:</p>
+                <ul>
+                    <li>High availability and durability for website content</li>
+                    <li>Integration with CloudFront for optimal performance</li>
+                    <li>Cost-effective storage for static assets</li>
+                    <li>Automated deployment through AWS CDK</li>
+                </ul>
+
+                <div class="demo-notice">
+                    <strong>Demo Flow:</strong> When you access this page as a human user, you see this content normally. However, if an AI crawler accesses this same URL, AWS WAF detects it, adds a special header, and CloudFront Functions redirect the request to a monetization endpoint.
+                </div>
+
+                <h2>Infrastructure as Code</h2>
+                <p>The entire demo is deployed using AWS CDK (Cloud Development Kit):</p>
+                <ul>
+                    <li>TypeScript-based infrastructure definitions</li>
+                    <li>Reproducible deployments across environments</li>
+                    <li>Version-controlled infrastructure changes</li>
+                    <li>Automated resource provisioning and configuration</li>
+                </ul>
+
+                <h2>Key Features Demonstrated</h2>
+                <ul>
+                    <li><strong>Transparent Bot Detection:</strong> AI crawlers are identified without impacting human users</li>
+                    <li><strong>Selective Monetization:</strong> Only AI traffic is redirected to monetization endpoints</li>
+                    <li><strong>Path Preservation:</strong> Original request paths are maintained for tracking and analytics</li>
+                    <li><strong>Scalable Architecture:</strong> Handles high-volume traffic with minimal latency</li>
+                    <li><strong>Cost Optimization:</strong> Efficient use of AWS services to minimize operational costs</li>
+                </ul>
+
+                <h2>Use Cases</h2>
+                <p>This architecture pattern can be applied to various scenarios:</p>
+                <ul>
+                    <li>News and media websites protecting premium content</li>
+                    <li>Educational platforms monetizing AI training access</li>
+                    <li>Technical documentation sites with valuable reference material</li>
+                    <li>E-commerce sites protecting product information and reviews</li>
+                    <li>Research publications and academic content</li>
+                </ul>
+
+                <h2>Performance Characteristics</h2>
+                <p>The demo architecture provides excellent performance metrics:</p>
+                <ul>
+                    <li><strong>Latency:</strong> Sub-100ms additional processing time for bot detection</li>
+                    <li><strong>Availability:</strong> 99.99% uptime through AWS global infrastructure</li>
+                    <li><strong>Scalability:</strong> Automatic scaling to handle traffic spikes</li>
+                    <li><strong>Cost Efficiency:</strong> Pay-per-use pricing model with no upfront costs</li>
+                </ul>
+
+                <h2>Security Considerations</h2>
+                <p>The implementation includes several security best practices:</p>
+                <ul>
+                    <li>Origin Access Control prevents direct S3 bucket access</li>
+                    <li>WAF rules protect against common web attacks</li>
+                    <li>CloudFront provides DDoS protection and SSL/TLS termination</li>
+                    <li>Least privilege IAM roles and policies</li>
+                </ul>
+
+                <p>This demo represents a production-ready approach to AI crawler monetization that balances technical sophistication with practical implementation considerations.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 AI Monetization Demo. Built with AWS CDK.</p>
+                <p>Demonstrating CloudFront + WAF + Bot Control integration</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

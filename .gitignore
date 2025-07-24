@@ -1,8 +1,17 @@
-*.js
-!jest.config.js
-*.d.ts
+# Compiled output
+dist/
+
+# Dependencies
 node_modules
+
+# Keep specific JS files
+!jest.config.js
 
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+.vscode
+.kiro
+
+.DS_Store

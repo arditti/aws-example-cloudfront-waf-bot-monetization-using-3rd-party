@@ -2,7 +2,7 @@
   "name": "aws-example-cloudfront-waf-bot-monetization-using-3rd-party",
   "version": "0.1.0",
   "bin": {
-    "aws-example-cloudfront-waf-bot-monetization-using-3rd-party": "bin/aws-example-cloudfront-waf-bot-monetization-using-3rd-party.js"
+    "aws-example-cloudfront-waf-bot-monetization-using-3rd-party": "dist/bin/aws-example-cloudfront-waf-bot-monetization-using-3rd-party.js"
   },
   "scripts": {
     "build": "tsc",
